@@ -1,0 +1,16 @@
+spring:
+                                                  datasource:
+                                                    driver-class-name: com.mysql.cj.jdbc.Driver
+                                                    url: jdbc:mysql:///testdb?useSSL=true&serverTimezone=CTT
+                                                    username: root
+                                                    password: root.123
+                                                  mapper:
+                                                    identity: MYSQL
+                                                    not-empty: true
+                                                    mappers:
+                                                      - tk.mybatis.mapper.common.Mapper
+                                                      - tk.mybatis.mapper.common.MySqlMapper
+                                                  #¥Ú”°sql”Ôæ‰
+                                                  logging:
+                                                    level:
+                                                      com.mike.boot.boot.bootssmtkmybatis.mapper: debug

@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver  #com.mysql.jdbc.Driver
+    url: jdbc:mysql:///testdb?useSSL=true&serverTimezone=CTT #jdbc:mysql:///testdb?useSSL=true&serverTimezone=CTT
+    username: root
+    password: root.123
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true  # book_id => bookId,book_name=> bookName
+  mapper-locations: classpath:mapper/*Mapper.xml # 指定Mapper映射路径
+  type-aliases-package: com.mike.boot.ssm.bootssm1.domain #定义别名
